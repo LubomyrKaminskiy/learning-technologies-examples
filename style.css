@@ -21,16 +21,16 @@ div {
 }
 
 
-/* http://www.responsivegridsystem.com/calculator/*/
+/*------------------------Grid'ed */
 
-/*  SECTIONS  */
+/*------------------------SECTIONS  */
 .section {
 	clear: both;
 	padding: 0px;
 	margin: 0px;
 }
 
-/*  COLUMN SETUP  */
+/*------------------------COLUMN SETUP  */
 .col {
 	display: block;
 	float:left;
@@ -38,14 +38,14 @@ div {
 }
 .col:first-child { margin-left: 0; }
 
-/*  GROUPING  */
+/*------------------------GROUPING  */
 .group:before,
 .group:after { content:""; display:table; }
 .group:after { clear:both;}
 .group { zoom:1; /* For IE 6/7 */ }
 
 
-/*  GRID OF TWELVE  */
+/*--------------------Just a grid  */
 .span_100perc {
 	width: 100%;
 }
@@ -214,8 +214,6 @@ div {
 {
 	background-color: red;	
 }
-
-
 
 .green-scrollbar::-webkit-scrollbar-track {
 	border: 1px solid green;
