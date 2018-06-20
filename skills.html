@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iamnotaskynet</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script >
+		function setDateTime() {
+			let datetime1 = new Date();
+			year = datetime1.getFullYear();
+			month = datetime1.getMonth() + 1;
+			day = datetime1.getDate();
+			hour = datetime1.getHours();
+			minute = datetime1.getMinutes();
+			second = datetime1.getSeconds();
+			document.getElementById("datetime").innerHTML = 
+				day + "/" + month + "/" + year + " " + hour + ":" + minute + ":" + second;
+		}
+		setInterval(setDateTime, 1000);
+	</script>
+</head>
+<body>
+	<header class="flex-header">
+		<a class="flex-item-header" href="https://github.com/iamnotaskynet">
+			<img src="https://avatars0.githubusercontent.com/u/14093790?s=460&amp;v=4" width="40" height="40" alt="">
+			iamnotaskynet
+		</a>
+
+		<span id="datetime" class="flex-item-header">time</span>
+
+	</header>
+	<hr>
+	<a href="index.html">&lt;</a>
+	
+	<div id="myskills" class="">
+		<!-- <span class="skill"> HTML <progress value="7" max="10"></progress> </span>
+		<br>
+		<span class="skill"> CSS <progress value="6" max="10"></progress> </span> -->
+		
+		<table class="">
+			<caption>Web skills</caption>
+			<tr>
+				<td class="skill">HTML</td>
+				<td> <progress value="7" max="10"></progress></td>
+			</tr>
+			<tr>
+				<td class="skill">CSS</td>
+				<td> <progress value="6" max="10"></progress> </td>
+			</tr>
+			<tr>
+				<td class="skill">JavaScript</td>
+				<td><progress value="5" max="10"></progress></td>
+			</tr>
+			<tr>
+				<td class="skill">PHP</td>
+				<td><progress value="5" max="10"></progress></td>
+			</tr>
+			<tr>
+				<td class="skill">Webassembly</td>
+				<td><progress value="1" max="10"></progress></td>
+			</tr>
+		</table>
+
+		<table class=""> 
+			<caption> Common languages</caption>
+			<tr>
+				<td class="skill">Python</td>
+				<td><progress value="5" max="10"></progress></td>
+			</tr>
+			<tr>
+				<td class="skill">Java</td>
+				<td><progress value="4" max="10"></progress></td>
+			</tr>
+			<tr>
+				<td class="skill">CSharp</td>
+				<td><progress value="3" max="10"></progress></td>
+			</tr>
+			<tr>
+				<td class="skill">Cpp</td>
+				<td><progress value="3" max="10"></progress></td>
+			</tr>
+			<tr>
+				<td class="skill">C</td>
+				<td><progress value="2" max="10"></progress></td>
+			</tr>
+			<tr>
+				<td class="skill">Rust</td>
+				<td><progress value="0" max="10"></progress></td>
+			</tr>
+			<tr>
+				<td class="skill">Golang</td>
+				<td><progress value="0" max="10"></progress></td>
+			</tr>
+		</table>
+
+		<table>
+			<caption>Databases</caption>
+			<tr>
+				<td class="skill">SQL</td>
+				<td><progress value="3" max="10"></progress></td>
+			</tr>
+			<tr>
+				<td class="skill">MySQL</td>
+				<td><progress value="2" max="10"></progress></td>
+			</tr>
+			<tr>
+				<td class="skill">MongoDB</td>
+				<td><progress value="1" max="10"></progress></td>
+			</tr>
+			<tr>
+				<td class="skill">Postgres</td>
+				<td><progress value="1" max="10"></progress></td>
+			</tr>
+		</table>
+
+		<table>
+			<caption>OS's Administrating</caption>
+			<tr>
+				<td class="skill">Windows based</td>
+				<td><progress value="8" max="10"></td>
+			</tr>
+			<tr>
+				<td class="skill">Linux</td>
+				<td><progress value="7" max="10"></td>
+			</tr>
+			<tr>
+				<td class="skill">RedHat based</td>
+				<td><progress value="5" max="10"></td>
+			</tr>
+			<tr>
+				<td class="skill">Debian based</td>
+				<td><progress value="8" max="10"></td>
+			</tr>
+			<tr>
+				<td class="skill">Unix based</td>
+				<td><progress value="2" max="10"></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
