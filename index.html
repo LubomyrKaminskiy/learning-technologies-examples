@@ -1,10 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>iamnotaskynet</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script >
+	
+</head>
+<body>
+	<header class="flex-header">
+		<a class="flex-item-header" href="https://github.com/iamnotaskynet">
+			<img src="https://avatars0.githubusercontent.com/u/14093790?s=460&amp;v=4" width="40" height="40" alt="">
+			iamnotaskynet
+		</a>
+
+		<span id="datetime" class="flex-item-header">time </span>
+		
+	</header>
+	<hr>
+
+	<div class="flex-container">
+		<button 
+				class="flex-item" 
+				onclick="window.location.href='./manifest.html'"
+				onmouseover="audio.play();">
+					MANIFEST</button>
+		<button 
+			class="flex-item" 
+			onclick="window.location.href='./projects.html'"
+			onmouseover="audio.play();">
+				PROJECTS</button>
+		<button 
+			class="flex-item"
+			onclick="window.location.href='./skills.html'"
+			onmouseover="audio.play();">
+				SKILLS</button>
+		<button 
+			class="flex-item"
+			onclick="window.location.href='./contacts.html'"
+			onmouseover="audio.play();">
+				CONTACTS</button>
+	</div>
+
+	<audio>
+		<source src="audio/beep.wav"></source>
+	</audio>
+
+	<script>
 		function setDateTime() {
 			let datetime1 = new Date();
 			year = datetime1.getFullYear();
@@ -17,33 +58,10 @@
 				day + "/" + month + "/" + year + " " + hour + ":" + minute + ":" + second;
 		}
 		setInterval(setDateTime, 1000);
+
+		var audio = document.getElementsByTagName("audio")[0];
+		audio.play();
+		
 	</script>
-</head>
-<body>
-	<header class="flex-header">
-		<a class="flex-item-header" href="https://github.com/iamnotaskynet">
-			<img src="https://avatars0.githubusercontent.com/u/14093790?s=460&amp;v=4" width="40" height="40" alt="">
-			iamnotaskynet
-		</a>
-
-		<span id="datetime" class="flex-item-header">time  <time datetime="2008-02-14 20:00"></span>
-
-	</header>
-	<hr>
-
-	<div class="flex-container">
-		<button class="flex-item" onclick="window.location.href='./manifest.html'">MANIFEST</button>
-		<button 
-			class="flex-item" 
-			onclick="window.location.href='./projects.html'">
-				PROJECTS</button>
-		<button 
-			class="flex-item"
-			onclick="window.location.href='./skills.html'">
-				SKILLS</button>
-		<button class="flex-item">CONTACTS</button>
-	</div>
-
-	
 </body>
 </html>
