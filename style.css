@@ -92,6 +92,7 @@ button:hover {
 	background: #8BB1C7;
 	color: #2B2F39;
 	border: 5px solid #F6FAF6;
+	border-radius: 1px;
 	box-shadow: 0px 0px 15px #2B728F;
 }
 
@@ -130,10 +131,7 @@ button:hover {
 	background: linear-gradient(90deg, #58B1F0, #007ABB);
 	color: black;
 }
-progress {
-	background: #14203B;
-	border-radius: 1px;
-}
+
 
 tr:hover {
 	box-shadow: 0px 0px 15px #2383A6;
