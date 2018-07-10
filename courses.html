@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>iamnotaskynet</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="courses.css">
+</head>
+<body>
+	<header class="flex-header">
+		<a class="flex-item-header" href="https://github.com/iamnotaskynet">
+			<img src="https://avatars0.githubusercontent.com/u/14093790?s=460&amp;v=4" width="40" height="40" alt="">
+			iamnotaskynet
+		</a>
+
+		<span id="datetime" class="flex-item-header">time </span>
+		
+	</header>
+	<hr>
+
+	<a href="index.html">&lt;</a>
+
+	
+
+	<dl>
+		<dt class="courses">codeacademy</dt>
+		<dd class="course"
+			onclick="window.location.href='https://www.codecademy.com/learn/learn-html'"
+		>Learn HTML<span class="done-mark">✅</span></dd>
+		<dd class="course">Learn CSS</dd>
+		<dd class="course">Introduction To JavaScript</dd>
+		<dd 
+			class="course"
+			onclick="window.location.href='https://www.codecademy.com/learn/learn-python'"
+		>Learn Python  <span class="done-mark">✅</span></dd>
+		<dd 
+			class="course"
+			onclick="window.location.href='https://www.codecademy.com/en/tracks/php'"
+		>Learn PHP  <span class="done-mark">✅</span></dd>
+
+	</dl>
+
+	<dl>
+		<dt class="courses">www.sololearn.com</dt>
+		<dd class="course"
+			onclick="window.open('https://www.sololearn.com/Course/HTML/')"
+		>HTML Fundamentals</dd>
+		<dd class="course">CSS Fundamentals</dd>
+		<dd class="course">JavaScript Tutorial</dd>
+		<dd class="course">jQuery Tutorial</dd>
+		<dd class="course">PHP Tutorial</dd>
+		<dd class="course">SQL Fundamentals</dd>
+		<dd class="course">Python 3 Tutorial</dd>
+		<dd class="course">Java Tutorial</dd>
+		<dd class="course">C# Tutorial</dd>
+		<dd class="course">C++ Tutorial</dd>
+		
+	</dl>
+
+	<dl>
+		<dt class="courses">Open Source Society University</dt>
+		<dd
+			class="course"
+			onclick="window.open('https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x#!')"
+		>Introduction to Computer Science - CS50</dd>
+		<dd
+			class="course"
+			onclick="window.open('')"
+		></dd>
+	</dl>
+
+	<dl>
+		<dt class="courses"></dt>
+		<dd class="course"></dd>
+		<dd class="course"></dd>
+	</dl>
+
+	<script>
+		function setDateTime() {
+			let datetime1 = new Date();
+			year = datetime1.getFullYear();
+			month = datetime1.getMonth() + 1;
+			day = datetime1.getDate();
+			hour = datetime1.getHours();
+			minute = datetime1.getMinutes();
+			second = datetime1.getSeconds();
+			document.getElementById("datetime").innerHTML = 
+				day + "/" + month + "/" + year + " " + hour + ":" + minute + ":" + second;
+		}
+		setInterval(setDateTime, 1000);
+
+		var audio = document.getElementsByTagName("audio")[0];
+		audio.play();
+		
+	</script>
+</body>
+</html>
