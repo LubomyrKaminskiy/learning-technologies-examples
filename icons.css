@@ -1,0 +1,11 @@
+.flex-icons-container {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row nowrap;
+}
+
+.flex-icons-item {
+	/*justify-content: center;*/
+	/*flex-grow: 1;*/
+	/*flex-flow: row wrap;*/
+}
