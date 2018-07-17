@@ -1,0 +1,12 @@
+
+#btn-helloworld:hover {
+	background-image: url("images/helloworld.png");
+}
+
+#btn-ancientnums:hover {
+	background-image: url("images/ancientnums.png");
+}
+
+#btn-telegalinks:hover {
+	background-image: url("images/telegalinks.png");
+}

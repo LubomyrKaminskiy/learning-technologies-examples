@@ -30,4 +30,10 @@ dd {
 
 .done-mark {
 	float: right;
+	color: mediumseagreen;
+}
+
+.failed-mark {
+	float: right;
+	color: tomato;
 }

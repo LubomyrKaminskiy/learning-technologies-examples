@@ -5,6 +5,10 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="courses.css">
+
+	<!-- font awesome icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<!-- font awesome icons -->
 </head>
 <body>
 	<header class="flex-header">
@@ -20,23 +24,27 @@
 
 	<a href="index.html">&lt;</a>
 
-	
+	<dl>
+		<dt class="courses">htmlacademy.ru</dt>
+		<dd class="course">free part</dd>
+		<dd class="course">subscribed part<span class="failed-mark"><i class="fas fa-times-circle"></i></span></dd>
+	</dl>
 
 	<dl>
-		<dt class="courses">codeacademy</dt>
+		<dt class="courses">codeacademy.com</dt>
 		<dd class="course"
 			onclick="window.location.href='https://www.codecademy.com/learn/learn-html'"
-		>Learn HTML<span class="done-mark">✅</span></dd>
+		>Learn HTML<span class="done-mark"><i class="fas fa-check-circle"></i></span></dd>
 		<dd class="course">Learn CSS</dd>
 		<dd class="course">Introduction To JavaScript</dd>
 		<dd 
 			class="course"
 			onclick="window.location.href='https://www.codecademy.com/learn/learn-python'"
-		>Learn Python  <span class="done-mark">✅</span></dd>
+		>Learn Python  <span class="done-mark"><i class="fas fa-check-circle"></i></span></dd>
 		<dd 
 			class="course"
 			onclick="window.location.href='https://www.codecademy.com/en/tracks/php'"
-		>Learn PHP  <span class="done-mark">✅</span></dd>
+		>Learn PHP  <span class="done-mark"><i class="fas fa-check-circle"></i></span></dd>
 
 	</dl>
 
@@ -58,6 +66,46 @@
 	</dl>
 
 	<dl>
+		<dt class="courses">khanacademy.org</dt>
+		<dd class="course">...</dd>
+		
+	</dl>
+
+	<dl>
+		<dt class="courses">freecodecamp.org</dt>
+		<dd class="course">Responsive Web Design Certification </dd>
+		<dd class="course">Javascript Algorithms And Data Structures Certification </dd>
+		<dd class="course">Front End Libraries Certification </dd>
+		<dd class="course">Data Visualization Certification </dd>
+		<dd class="course">Apis And Microservices Certification </dd>
+		<dd class="course">Information Security And Quality Assurance Certification </dd>
+		<dd class="course">Coding Interview Prep </dd>
+	</dl>
+
+	<dl>
+		<dt class="courses">dataquest.io</dt>
+		<dd class="course">Python Programming: Beginner</dd>
+		<dd class="course">Python Intermediate</dd>
+	</dl>
+
+	<dl>
+		<dt class="courses">datacamp.com</dt>
+		<dd class="course">Intro to Python for Data Science</dd>
+		<dd class="course">Intermediate Python for Data Science</dd>
+		<dd class="course">Python Data Science Toolbox (Part 1)</dd>
+		<dd class="course">Python Data Science Toolbox (Part 2)</dd>
+		<dd class="course">Cleaning Data in Python</dd>
+		<dd class="course">Importing Data in Python (Part 1)</dd>
+		<dd class="course">Importing Data in Python (Part 2)</dd>
+		<dd class="course">Deep Learning in Python</dd>
+		<dd class="course">Machine Learning with Tree-Based Models in Python</dd>
+		<dd class="course">Introduction to Data Visualization with Python</dd>
+		<dd class="course">Statistical Thinking in Python (Part 1)</dd>
+		<dd class="course">Statistical Thinking in Python (Part 2)</dd>
+		<dd class="course">...</dd>
+	</dl>
+
+	<dl>
 		<dt class="courses">Open Source Society University</dt>
 		<dd
 			class="course"
@@ -66,15 +114,15 @@
 		<dd
 			class="course"
 			onclick="window.open('')"
-		></dd>
+		>...</dd>
 	</dl>
-
+<!-- 
 	<dl>
 		<dt class="courses"></dt>
 		<dd class="course"></dd>
 		<dd class="course"></dd>
 	</dl>
-
+ -->
 	<script>
 		function setDateTime() {
 			let datetime1 = new Date();
