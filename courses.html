@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="courses.css">
+	<link rel="stylesheet" type="text/css" href="footer.css">
 
 	<!-- font awesome icons -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -25,8 +26,11 @@
 	<a href="index.html">&lt;</a>
 
 	<dl>
-		<dt class="courses">htmlacademy.ru</dt>
-		<dd class="course">free part</dd>
+		<dt class="courses"
+			onclick="window.open('https://htmlacademy.ru/?ref=804535')">htmlacademy.ru</dt>
+		<dd class="course"
+			onclick="window.open('https://htmlacademy.ru/profile/id804535')"
+			>free part<span class="done-mark"><i class="fas fa-check-circle"></i></span></dd>
 		<dd class="course">subscribed part<span class="failed-mark"><i class="fas fa-times-circle"></i></span></dd>
 	</dl>
 
@@ -49,10 +53,12 @@
 	</dl>
 
 	<dl>
-		<dt class="courses">www.sololearn.com</dt>
+		<dt class="courses">sololearn.com</dt>
 		<dd class="course"
-			onclick="window.open('https://www.sololearn.com/Course/HTML/')"
-		>HTML Fundamentals</dd>
+			onclick="window.open('https://www.sololearn.com/Course/HTML/')">
+			HTML Fundamentals 
+			<span class="done-mark"><i class="fas fa-check-circle"></i></span>
+		</dd>
 		<dd class="course">CSS Fundamentals</dd>
 		<dd class="course">JavaScript Tutorial</dd>
 		<dd class="course">jQuery Tutorial</dd>
@@ -123,6 +129,10 @@
 		<dd class="course"></dd>
 	</dl>
  -->
+
+ 	<footer style="">
+ 		<button>back</button>
+ 	</footer>
 	<script>
 		function setDateTime() {
 			let datetime1 = new Date();

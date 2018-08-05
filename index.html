@@ -5,6 +5,9 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	
+	<!-- font awesome icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<!-- font awesome icons -->
 </head>
 <body>
 	<header class="flex-header">
@@ -23,32 +26,45 @@
 				class="flex-item" 
 				onclick="window.location.href='./manifest.html'"
 				onmouseover="audio.play();">
+					<i class="fas fa-align-left fa-2x"></i>
+					<br>
 					MANIFEST</button>
 		<button 
 				class="flex-item" 
 				onclick="window.location.href='./courses.html'"
 				onmouseover="audio.play();">
+					<i class="fas fa-graduation-cap fa-2x"></i>
+					<br>
 					COURSES</button>
 		<button 
 			class="flex-item" 
 			onclick="window.location.href='./projects.html'"
 			onmouseover="audio.play();">
+				<i class="fas fa-project-diagram fa-2x"></i>
+				<br>
 				PROJECTS</button>
 		<button 
 			class="flex-item"
 			onclick="window.location.href='./skills.html'"
 			onmouseover="audio.play();">
+				<i class="far fa-star fa-2x"></i>
+				<br>
 				SKILLS</button>
 		<button 
 			class="flex-item"
 			onclick="window.location.href='./contacts.html'"
 			onmouseover="audio.play();">
+				<i class="fas fa-phone fa-2x"></i>
+				<br>
 				CONTACTS</button>
 	</div>
 
 	<audio>
-		<source src="audio/beep.wav"></source>
+		<source src="audio/beep.wav"></source> <!-- for button -->
+		<source src="audio/ambiant.mp3" controls autoplay loop></source>
 	</audio>
+
+
 
 	<script>
 		function setDateTime() {
@@ -66,6 +82,12 @@
 
 		var audio = document.getElementsByTagName("audio")[0];
 		audio.play();
+
+		var audio_ambient = document.getElementsByTagName("audio")[1];
+
+		function load() {
+			audio_ambient.play();
+		};
 		
 	</script>
 </body>
