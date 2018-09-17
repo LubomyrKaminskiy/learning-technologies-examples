@@ -71,12 +71,24 @@ button:hover {
 	box-shadow: 0px 0px 15px #2383A6,
 			inset 10px 10px 35px #2383A6,
 			inset -10px -10px 35px #2383A6;
+
+
+
+	/* for 3D look after hovering on button TODO: correct pespective*/
+	transform: rotateX(5deg) rotateY(5deg);	
+	-webkit-transform: rotateX(5deg) rotateY(5deg);
+	-moz-transform: rotateX(5deg) rotateY(5deg);
 }
 /*---------------------------------------*/
 .flex-container {
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
+
+	/* for 3D look after hovering on button TODO: correct pespective*/
+	perspective: 100px;
+	-webkit-perspective: 100px;
+	-moz-perspective: 100px;
 }
 
 .flex-item {

@@ -23,7 +23,7 @@
 	</header>
 	<hr>
 
-	<a href="index.html">&lt;</a>
+	<!-- <a href="index.html">&lt;</a> -->
 
 	<dl>
 		<dt class="courses"
@@ -37,10 +37,14 @@
 	<dl>
 		<dt class="courses">codeacademy.com</dt>
 		<dd class="course"
-			onclick="window.location.href='https://www.codecademy.com/learn/learn-html'"
-		>Learn HTML<span class="done-mark"><i class="fas fa-check-circle"></i></span></dd>
-		<dd class="course">Learn CSS</dd>
-		<dd class="course">Introduction To JavaScript</dd>
+			onclick="window.location.href='https://www.codecademy.com/learn/learn-html'">
+		Learn HTML<span class="done-mark"><i class="fas fa-check-circle"></i></span></dd>
+		<dd class="course"
+			onclick="window.location.href='https://www.codecademy.com/learn/learn-css'">
+			Learn CSS<span class="done-mark"><i class="fas fa-check-circle"></i></span></dd>
+		<dd class="course"
+			onclick="window.location.href='https://www.codecademy.com/learn/introduction-to-javascript'">
+			Introduction To JavaScript <span class="done-mark"><i class="fas fa-check-circle"></i></span></dd>
 		<dd 
 			class="course"
 			onclick="window.location.href='https://www.codecademy.com/learn/learn-python'"
@@ -53,14 +57,23 @@
 	</dl>
 
 	<dl>
-		<dt class="courses">sololearn.com</dt>
+		<dt class="courses"
+			onclick="window.open('https://www.sololearn.com/Profile/10023513/CSS')">sololearn.com</dt>
 		<dd class="course"
 			onclick="window.open('https://www.sololearn.com/Course/HTML/')">
 			HTML Fundamentals 
 			<span class="done-mark"><i class="fas fa-check-circle"></i></span>
 		</dd>
-		<dd class="course">CSS Fundamentals</dd>
-		<dd class="course">JavaScript Tutorial</dd>
+		<dd class="course"
+			onclick="window.open('https://www.sololearn.com/Course/CSS/')">
+			CSS Fundamentals
+			<span class="done-mark"><i class="fas fa-check-circle"></i></span>
+		</dd>
+		<dd class="course"
+			onclick="window.open('https://www.sololearn.com/Course/JavaScript/')">
+			JavaScript Tutorial
+			<span class="done-mark"><i class="fas fa-check-circle"></i></span>
+		</dd>
 		<dd class="course">jQuery Tutorial</dd>
 		<dd class="course">PHP Tutorial</dd>
 		<dd class="course">SQL Fundamentals</dd>
@@ -121,6 +134,18 @@
 			class="course"
 			onclick="window.open('')"
 		>...</dd>
+		<dd
+			class="course"
+			onclick="window.open('')"
+		>...</dd>
+		<dd
+			class="course"
+			onclick="window.open('')"
+		>...</dd>
+		<dd
+			class="course"
+			onclick="window.open('')"
+		>...</dd>
 	</dl>
 <!-- 
 	<dl>
@@ -131,8 +156,9 @@
  -->
 
  	<footer style="">
- 		<button>back</button>
+ 		<button onclick="window.location.href='index.html'">back</button>
  	</footer>
+ 	
 	<script>
 		function setDateTime() {
 			let datetime1 = new Date();
