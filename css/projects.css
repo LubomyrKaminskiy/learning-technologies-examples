@@ -1,0 +1,15 @@
+
+#btn-helloworld:hover {
+	background: url("images/helloworld.webp"),url("images/helloworld.png")  no-repeat center center;
+	text-shadow:  1px 0px 0px #152743,  0px 1px 0px #152743,  -1px 0px 0px #152743,  0px -1px 0px #152743;
+}
+
+#btn-ancientnums:hover {
+	background: url("images/ancientnums.webp"),url("images/ancientnums.png")  no-repeat center center;
+	text-shadow:  1px 0px 0px #152743,  0px 1px 0px #152743,  -1px 0px 0px #152743,  0px -1px 0px #152743;
+}
+
+#btn-telegalinks:hover {
+	background: url("images/telegalinks.webp"),url("images/telegalinks.png")  no-repeat center center;
+	text-shadow:  1px 0px 0px #152743,  0px 1px 0px #152743,  -1px 0px 0px #152743,  0px -1px 0px #152743;
+}

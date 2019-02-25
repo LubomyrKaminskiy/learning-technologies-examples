@@ -1,0 +1,50 @@
+#myskills {
+	padding: 30px;
+	margin: 30px;
+
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row nowrap;
+}
+
+.skill {
+	background: linear-gradient(90deg, #1D4965, #143359);
+	color: #387FA5;
+}
+
+.skill:active {
+	background: linear-gradient(90deg, #58B1F0, #007ABB);
+	color: black;
+}
+
+
+tr:hover {
+	box-shadow: 0px 0px 15px #2383A6;
+}
+
+table {
+	border: 1px solid rgba(0,0,0, 0.2);
+	border-spacing: 10px;
+}
+
+caption {
+	caption-side: top; 
+	text-align: left;
+	color: #929EB1;
+}
+
+tr {
+	border: 0px solid rgba(0,0,0, 0);
+}
+
+td {
+	border: 0px solid rgba(0,0,0, 0);
+	/*margin: 5px;*/
+	padding: 5px;
+}
+
+@media only screen and (max-width: 620px) {
+	#myskills {
+		display: block;
+	}
+}

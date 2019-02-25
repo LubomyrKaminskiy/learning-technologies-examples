@@ -1,11 +1,34 @@
 footer {
-	width: 100%;
-	height: 400px;
+	margin-left: -10px;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background: linear-gradient(180deg, #0F1930, #0E1628);
+	/*width: 100%;*/
+	height: 60px;
+	text-align: center;
+	align-self: center;
+}
 
-	margin-top: 10px;
-	margin-bottom: 0px;
+footer button {
+	margin: 20px;
+	padding: 4px 15px;
+	background: linear-gradient(180deg, #2F3A4C, #0E1628);
 
-	background-color: grey;
+	font-size: 20px;
+	color: rgba(255, 255, 255, 0.3);
+	
+	border: 0;
+}
 
-	/*padding: 20px;*/
+footer button:hover {
+	margin: 20px;
+	padding: 4px 15px;
+	background: linear-gradient(180deg, #2F3A4C, #0E1628);
+
+	font-size: 20px;
+	color: white;
+	
+	border: 0;
 }
