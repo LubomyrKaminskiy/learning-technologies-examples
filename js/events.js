@@ -49,6 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		content.src = url;
 
 		content.style.display = "block";
+		content.style.height = "98vh";
 		// content.style.height = "100vh"; 
 		content.style.flex = "1 1 auto";
 		footerBack.style.display = "block";
