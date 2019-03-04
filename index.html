@@ -4,98 +4,93 @@
 	<title>iamnotaskynet</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" type="text/css" href="css/style.css"media="all">
-	<link rel="stylesheet" type="text/css" href="css/footer.css" media="all">
-	
+	<link rel="stylesheet" type="text/css" href="/css/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="/css/footer.css" media="all">
+
 	<!-- font awesome icons -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<!-- font awesome icons -->
+
+	<!--  MUSIC  -->
+	<audio>
+		<source src="audio/beep.wav">
+		</source> <!-- for button -->
+	</audio>
+	<iframe style="display: none;" src="audio/ambiant.mp3" allow="autoplay"></iframe>
+	<!-- SCRIPT -->
+	<script src="js/buttonBeap.js"></script>
+	<script src="js/events.js"></script>
+
+	<!-- STYLES -->
+	<link rel="stylesheet" type="text/css" href="/css/header.css" media="all">
+	<!-- SCRIPT -->
+	<script src="/js/headerTime.js"></script>
+	<!-- <script src="/js/eventsHeader.js"></script> -->
 </head>
+
 <body>
-	<header class="flex-header">
-		<a class="flex-item-header" href="https://github.com/iamnotaskynet">
+	<header id="header-iframe" class="flex-header">
+		<a id="profile-button" class="flex-item-header" href="https://github.com/iamnotaskynet">
 			<img src="https://avatars0.githubusercontent.com/u/14093790?s=460&amp;v=4" width="40" height="40" alt="">
-			iamnotaskynet
+			<span>iamnotaskynet</span>
 		</a>
-
-		<span id="datetime" class="flex-item-header">time </span>
-		
+		<div class="flex-item-header header-menu">
+			<a id="goto-landing" href="/landing.html">Landing mode</a>
+			<a href="">Instruments</a>
+			<a href="">Knowledgebase</a>
+		</div>
+		<span id="datetime" class="flex-item-header">1/1/1970 00:00:00 </span>
 	</header>
-	<hr>
 
-	<div class="flex-container">
-		<button 
-				class="flex-item" 
+	<!-- <iframe id="header-iframe" style="width: 100%; height: 90px; border-width: 0;" src="components/header.html"></iframe> -->
+
+	<hr id="horizontal-line">
+
+	<iframe id="content" style="width: 100%; border-width: 0; display: none;" src=""></iframe>
+
+	<div id="buttons-block" class="flex-container">
+		<button id="goto-manifest" 
+				class="flex-item button-index" 
 				accesskey="m" 
-				onclick="window.location.href='./manifest.html'"
 				onmouseover="audio.play();">
-					<i class="fas fa-align-left fa-2x"></i>
-					<br>
-					MANIFEST</button>
-		<button 
-				class="flex-item" 
-				accesskey="l" 
-				onclick="window.location.href='./courses.html'"
+			<i class="fas fa-align-left fa-2x"></i>
+			<br>
+			MANIFEST</button>
+		<button id="goto-courses" 
+				class="flex-item button-index" 
+				accesskey="l" onmouseover="audio.play();">
+			<i class="fas fa-graduation-cap fa-2x"></i>
+			<br>
+			LEARNED
+			<!-- COURSES --></button>
+		<button id="goto-projects" 
+				class="flex-item button-index" 
+				accesskey="p" 
 				onmouseover="audio.play();">
-					<i class="fas fa-graduation-cap fa-2x"></i>
-					<br>
-					LEARNED<!-- COURSES --></button>
-		<button 
-			class="flex-item" 
-			accesskey="p" 
-			onclick="window.location.href='./projects.html'"
-			onmouseover="audio.play();">
-				<i class="fas fa-project-diagram fa-2x"></i>
-				<br>
-				PROJECTS</button>
-		<button 
-			class="flex-item" 
-			accesskey="s" 
-			onclick="window.location.href='./skills.html'"
-			onmouseover="audio.play();">
-				<i class="far fa-star fa-2x"></i>
-				<br>
-				SKILLS</button>
-		<button 
-			class="flex-item"
-			accesskey="c" 
-			onclick="window.location.href='./contacts.html'"
-			onmouseover="audio.play();">
-				<i class="fas fa-phone fa-2x"></i>
-				<br>
-				CONTACTS</button>
+			<i class="fas fa-project-diagram fa-2x"></i>
+			<br>
+			PROJECTS</button>
+		<button id="goto-skills"
+				class="flex-item button-index" 
+				accesskey="s" 
+				onmouseover="audio.play();">
+			<i class="far fa-star fa-2x"></i>
+			<br>
+			SKILLS</button>
+		<button id="goto-contacts" 
+				class="flex-item button-index" 
+				accesskey="c" 
+				onmouseover="audio.play();">
+			<i class="fas fa-phone fa-2x"></i>
+			<br>
+			CONTACTS</button>
 	</div>
 
-	<audio>
-		<source src="audio/beep.wav"></source> <!-- for button -->
-		<source src="audio/ambiant.mp3" controls autoplay loop></source>
-	</audio>
-
-
-
-	<script>
-		function setDateTime() {
-			let datetime1 = new Date();
-			year = datetime1.getFullYear();
-			month = datetime1.getMonth() + 1;
-			day = datetime1.getDate();
-			hour = datetime1.getHours();
-			minute = datetime1.getMinutes();
-			second = datetime1.getSeconds();
-			document.getElementById("datetime").innerHTML = 
-				day + "/" + month + "/" + year + " " + hour + ":" + minute + ":" + second;
-		}
-		setInterval(setDateTime, 1000);
-
-		var audio = document.getElementsByTagName("audio")[0];
-		audio.play();
-
-		var audio_ambient = document.getElementsByTagName("audio")[1];
-
-		function load() {
-			audio_ambient.play();
-		};
-		
-	</script>
+	<footer id="footer-back" 
+			class="footer"
+			style="display: none;">
+		<button class="footer-button" accesskey="b" onmouseover="audio.play();">back</button>
+	</footer>
 </body>
+
 </html>

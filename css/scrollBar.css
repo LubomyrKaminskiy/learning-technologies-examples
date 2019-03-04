@@ -1,0 +1,39 @@
+/*----------------Scrollbar style---------*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #152743;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1D4764;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #51B1ED;
+}
+
+/* hide scrollbar*/
+
+::-webkit-scrollbar { width: 0 !important }
+
+
+/*TODO firefox, edge, explorer*/
+html {  overflow: -moz-scrollbars-none; }
+
+html { -ms-overflow-style: none; }
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
+
+:-moz-any(#content,#appcontent) browser{
+ margin-right:-14px!important;
+ overflow-y:scroll;
+ margin-bottom:-14px!important;
+ overflow-x:scroll;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>iamnotaskynet</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- STYLES -->
+    <!-- <link rel="stylesheet" type="text/css" href="/css/style.css" media="all"> -->
+	<link rel="stylesheet" type="text/css" href="/css/header.css" media="all">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- SCRIPT -->
+	<script src="/js/headerTime.js"></script>
+    <!--  MUSIC  -->
+ 	<audio>
+		<source src="audio/beep.wav"></source> <!-- for button -->
+	</audio>
+    <iframe style="display: none;" src="audio/ambiant.mp3" allow="autoplay"></iframe>
+    <style>
+        body {
+            padding-top:60px;
+            width: 100%;
+            background: linear-gradient(90deg, #141C3D, #12293E);
+            /* display: flex;
+  	        flex-flow: column; */
+        }
+        /* HEADER WITH MENU overriding */
+        #header-iframe {
+            position: fixed;
+            width: 100%;
+            /* height: 30px; */
+            top: 0px;
+            left: 0px;
+            right: 0px;
+
+            border-bottom: 3px solid  #00BFFC;
+
+            z-index: 100;
+        }
+        #header-iframe #profile-button {
+            /* display: block; */
+            /* padding: 10px; */
+        }
+
+        #header-iframe #datetime {
+            margin-right: 20px;
+        }
+        /* -------------------------------------------- */
+        .block {
+            width: 100%;
+            font-family: monospace;
+            letter-spacing: 2px;
+            font-size: 20px;
+            
+            /*   border-bottom: 5px solid #ACDDF9; */
+            
+            padding-top: 0px;
+            margin-top: 0px;
+            /* display: block; */
+            /* height: 100vh; */
+            
+            /* display:flex; */
+            /* justify-content: center; */
+            /* flex-direction: column; */
+        }
+        /*------------------------------------------------ */
+        #welcome-section {
+            text-align: center;
+            font-family: monospace;
+            letter-spacing: 2px;
+            font-size: 20px;
+            background: linear-gradient(90deg, #141C3D, #12293E);
+            /*   border-bottom: 5px solid #ACDDF9; */
+            
+            padding-top: 0px;
+            margin-top: 0px;
+            display: block;
+            height: 100vh;
+            
+            display:flex;
+            justify-content: center;
+            flex-direction: column;
+            }
+            #welcome-section h1 { color: #00BFFC;}
+            #welcome-section h1:hover {
+            /*   color: #ACDDF9;
+            letter-spacing: 3px; */
+            animation-name: welcome-h1-hover;
+            animation-duration: 2s;
+            }
+
+            @keyframes welcome-h1-hover{
+            0% {
+                color: #00BFFC;
+                letter-spacing: 2px;
+            }
+            50% {
+                color: #ACDDF9;
+                letter-spacing: 8px;
+                text-shadow: 0px 0px 15px #2383A6;
+            }
+            100% {
+                color: #00BFFC;
+                letter-spacing: 2px;
+            }
+            }
+            #welcome-section p {
+            color: #00769F;
+            }
+            #welcome-section p:hover {
+            animation-name: welcome-p-hover;
+            animation-duration: 2s;
+            }
+
+            @keyframes welcome-p-hover {
+            50% {
+                font-weight: bolder;
+                letter-spacing: 3px;
+            }
+            }
+        /* ----------------------------------------------- */
+        .iframe-container {
+            overflow: hidden;
+            padding-top: 236.25%; /* ???? */
+            padding-bottom: 206.25%; /* ???? */
+            position: relative;
+
+            border-bottom: 5px solid #ACDDF9;
+        }
+        .iframe-container #iframe-manifest, #iframe-courses, #iframe-projects, #iframe-skills, #iframe-contacts {
+            border: 0;
+            height: 120%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            /* bottom: 0; */
+            width: 100%;
+        }
+        /* .iframe-container #iframe-projects {
+            height: 200px !important;   
+        } */
+    </style>
+    <!-- <script>
+    function resizeIframe(obj) {
+        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+    }
+    </script> -->
+</head>
+<body>
+	<header id="header-iframe" class="flex-header">
+		<a id="profile-button" class="flex-item-header" href="https://github.com/iamnotaskynet">
+			<img src="https://avatars0.githubusercontent.com/u/14093790?s=460&amp;v=4" width="40" height="40" alt="">
+			<span>iamnotaskynet</span>
+		</a>
+		<div class="flex-item-header header-menu">
+			<a id="goto-spa" href="/index.html">SPA mode</a>
+            <a href="#iframe-manifest">manifest</a>
+            <a href="#iframe-courses">courses</a>
+            <a href="#iframe-projects">projects</a>
+            <a href="#iframe-skills">skills</a>
+			<a href="#iframe-contacts">contacts</a>
+		</div>
+		<span id="datetime" class="flex-item-header">1/1/1970 00:00:00 </span>
+	</header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <!-- 
+
+        <a id="goto-spa" href="/index.html">SPA mode</a>
+			<a href="">Instruments</a>
+			<a href="">Knowledgebase</a>
+     -->
+    <!-- <iframe id="" src="/components/manifest.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe> -->
+    <div id="welcome-section">
+        <h1>iamnotaskynet</h1>
+        <p>midnight coder</p>
+    </div>
+    <div class="iframe-container">
+        <br>
+        <iframe id="iframe-manifest" src="/components/manifest.html"></iframe>
+    </div>
+    <div class="iframe-container">
+            <br>
+        <iframe id="iframe-courses" src="/components/courses.html"></iframe>
+    </div>
+    <div class="iframe-container">
+            <br>
+        <iframe id="iframe-projects" src="/components/projects.html"></iframe>
+    </div>
+    <div class="iframe-container">
+            <br>
+        <iframe id="iframe-skills" src="/components/skills.html"></iframe>
+    </div>
+    <div class="iframe-container">
+            <br>
+        <iframe id="iframe-contacts" src="/components/contacts.html"></iframe>
+    </div>
+</body>
+</html>

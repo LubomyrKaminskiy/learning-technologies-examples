@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+body {
+	font-family: 'VT323', monospace;
+	margin: 0;
+	padding: 0;
+
+}
+
+a {
+	padding: 5px;
+	color: #00769F;
+	text-decoration: none;
+	border: 2px solid  #00769F;
+	border-radius: 4px;
+}
+
+a:hover {
+	border-radius: 5px;
+	border: 2px solid #ACDDF9;
+	color: #ACDDF9;
+}
+
+.flex-icons-container {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row nowrap;
+}
+
+.flex-icons-item {
+	/*justify-content: center;*/
+	/*flex-grow: 1;*/
+	/*flex-flow: row wrap;*/
+}
+
+@media only screen and (max-width: 620px) {
+
+	.flex-icons-container {
+		flex-flow: row wrap;
+		justify-content: flex-start;
+	}
+
+	.flex-icons-item {
+		text-align: center;
+		width: 80px;
+		height: 80px;
+		margin:10px;
+		padding: 10px;
+	}
+}

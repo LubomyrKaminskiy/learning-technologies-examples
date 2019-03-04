@@ -1,19 +1,29 @@
-footer {
-	margin-left: -10px;
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+.footer {
+	/* font-family: 'VT323', monospace; */
+	/*margin-left: -10px;*/
 	position: fixed;
+
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
-	background: linear-gradient(180deg, #0F1930, #0E1628);
-	/*width: 100%;*/
+
+	width: 100vw;
 	height: 60px;
+
+	background: linear-gradient(180deg, #0F1930, #0E1628);
+
 	text-align: center;
 	align-self: center;
 }
 
-footer button {
+.footer-button {
+	font-family: 'VT323', monospace;
+
 	margin: 20px;
 	padding: 4px 15px;
+	
 	background: linear-gradient(180deg, #2F3A4C, #0E1628);
 
 	font-size: 20px;
@@ -22,13 +32,16 @@ footer button {
 	border: 0;
 }
 
-footer button:hover {
+.footer-button:hover {
 	margin: 20px;
 	padding: 4px 15px;
 	background: linear-gradient(180deg, #2F3A4C, #0E1628);
 
 	font-size: 20px;
 	color: white;
-	
-	border: 0;
+	border: 2px solid #ACDDF9;
+	border-radius: 20%;
+	box-shadow: 0px 0px 15px #2383A6,
+			inset 10px 10px 35px #2383A6,
+			inset -10px -10px 35px #2383A6;
 }

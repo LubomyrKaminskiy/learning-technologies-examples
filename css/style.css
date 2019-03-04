@@ -5,48 +5,29 @@ body {
 	background: linear-gradient(90deg, #141C3D, #12293E);
 
 	font-family: 'VT323', monospace;
+
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+  	flex-flow: column;
+  	height: 100vh;
 }
 
-header {
-	padding: 10px;
-}
 
-img {
-	border: 2px solid #5C7989;
-	border-radius: 5px;
-}
-
-a {
-	padding: 5px;
-	color: #00769F;
-	text-decoration: none;
-	border: 2px solid  #00769F;
-	border-radius: 4px;
-}
-
-a:hover {
-	border-radius: 5px;
-	border: 2px solid #ACDDF9;
-	color: #ACDDF9;
-}
-
-#datetime {
-	padding: 5px;
-	color: #00769F;
-}
-
-#datetime:hover {
-	color: #ACDDF9;
-}
 
 hr {
 	/*color: #1A3D5E;
 	color: rgba(26, 61, 94, 0.2);
 	-webkit-color: rgba(26, 61, 94, 0.2);*/
+	margin-left:  10px;
+	margin-right: 10px;
+	margin-top: 30px;
 	border: 1px solid rgba(26, 61, 94, 0.8);
+	/*width: 80vw;*/
 }
 
-button {
+.button-index {
 	background: #00769F;
 	background: linear-gradient(180deg, #1B3E62, #00759F);
 	padding: 30px;
@@ -63,9 +44,16 @@ button {
 	/*font-variant: small-caps;*/
 
 	max-width: 220px;
+
+	transform: rotateX(0deg) rotateY(0deg);	
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	-moz-transform: rotateX(0deg) rotateY(0deg);
+
+	transition-property: transform;
+	transition-duration: 2s;
 }
 
-button:hover {
+.button-index:hover {
 	border: 2px solid #ACDDF9;
 	color: #ACDDF9;
 	box-shadow: 0px 0px 15px #2383A6,
@@ -78,7 +66,20 @@ button:hover {
 	transform: rotateX(5deg) rotateY(5deg);	
 	-webkit-transform: rotateX(5deg) rotateY(5deg);
 	-moz-transform: rotateX(5deg) rotateY(5deg);
+
+
+	transition-property: transform;
+	transition-duration: 2s;
+
+	/* animation-name: button-index-animation; */
+  	/* animation-duration: 2s; */
 }
+
+/* @keyframes button-index-animation {
+	0% {}
+	50% {}
+	100% {}
+} */
 /*---------------------------------------*/
 .flex-container {
 	display: flex;
@@ -97,84 +98,20 @@ button:hover {
 	/*flex-flow: row wrap;*/
 }
 /*---------------------------------------*/
-.flex-header {
-	display: flex;
-	justify-content: space-between;
-	flex-flow: row nowrap;
-}
-
-.flex-item-header {
-	/*justify-content: center;*/
-	/*flex-grow: 1;*/
-	/*flex-flow: row wrap;*/
-}
-
-/*------------------------manifest page-----*/
-
-#manifest-text {
-	margin: 20px 50px 60px 50px;
-	padding: 20px 50px 20px 50px;
-	background: #8BB1C7;
-	color: #2B2F39;
-	border: 5px solid #F6FAF6;
-	border-radius: 1px;
-	box-shadow: 0px 0px 15px #2B728F;
-	word-break: break-all;
-}
-
-/*#manifest-text {
-	margin: 20px 50px 20px 50px;
-	padding: 20px 50px 20px 50px;
-	background: linear-gradient(90deg, #2C607F, #183C66);
-	color: #5BB7EE;
-	border-radius: 4px;
-}*/
-
-#manifest-text:active {
-	margin: 20px 50px 60px 50px;
-	padding: 20px 50px 20px 50px;
-	background: linear-gradient(90deg, #52B9F3, #A2D6F5);
-	color: #1A3B58;
-	border-radius: 4px;
-}
-
-/*------------------------skills page-----*/
 
 
-/*----------------Scrollbar style---------*/
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: #152743;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #1D4764;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #51B1ED;
+#content {
+	/*overflow: hidden;*/
 }
 
 
 
 
-/*
-ADAPTIVE
-RESPONSIVE
-*/
+
 
 @media only screen and (max-width: 620px) {
-	#datetime {
-		font-size: 30px;
+	hr {
+		margin-top: 30px;	
 	}
-	button.flex-item {
-		/*flex: 1;*/
-	}
-}
+
+} 

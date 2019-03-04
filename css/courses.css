@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
 body {
+	font-family: 'VT323', monospace;
+	margin: 0;
+	padding: 0;
+
+	/*top:0;
+	bottom: 0;*/
 	padding-bottom: 50px;
 }
 
 dl {
+	margin-left: 2%;
 	width: 40%;
 }
 
@@ -31,7 +40,6 @@ dd {
 	padding: 0px;
 }
 
-
 .done-mark {
 	float: right;
 	color: mediumseagreen;
@@ -42,11 +50,43 @@ dd {
 	color: tomato;
 }
 
+/*  */
+#course-profile-preview {
+	position: fixed;
+	
+	top: 30%;
+	right: 1%;
 
+	width: 50vw;
+	height: 60vh;
+
+	margin-right: 5px;
+	margin-top: -55px;
+
+	
+
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+	object-fit: cover;
+
+	border-width: 10px;
+	border-radius: 10px;
+	border-color: #51B1ED;
+
+}
 
 @media only screen and (max-width: 620px) {
 
+	#course-profile-preview  {
+		display: none;
+	}
 	dl {
 		width: 90%;
 	}
 }
+/*
+/home/iamnotaskynet/Downloads/FireShot/visible part/codeacademy.png
+/home/iamnotaskynet/Downloads/FireShot/visible part/htmlacademy.png
+/home/iamnotaskynet/Downloads/FireShot/visible part/sololearn.png*/
