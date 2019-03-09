@@ -11,9 +11,7 @@
     <!-- SCRIPT -->
 	<script src="/js/headerTime.js"></script>
     <!--  MUSIC  -->
- 	<audio>
-		<source src="audio/beep.wav"></source> <!-- for button -->
-	</audio>
+ 	<audio><source src="audio/beep.wav"></source></audio>
     <iframe style="display: none;" src="audio/ambiant.mp3" allow="autoplay"></iframe>
     <style>
         @import url('https://fonts.googleapis.com/css?family=VT323');
@@ -46,6 +44,7 @@
         #header-iframe #datetime {
             margin-right: 20px;
         }
+
         #header-menu-button {
             display: none;
             
@@ -64,8 +63,6 @@
         
         /* #header-menu-button:hover {} */
         @media only screen and (max-width: 740px) {
-            
-
             #header-menu-button {
                 display: block;
                 /* display: none; */
@@ -100,7 +97,6 @@
 
                 display: block;
             }
-            
             .dropdown:hover .header-menu{
                 display: block;
             }
